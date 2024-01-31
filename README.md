@@ -7,7 +7,7 @@ To deploy this app:
 1. Clone this repository
 
 ```sh
-git clone git@github.com:dabit3/full-stack-web3.git
+git clone https://github.com/venus0213/web3-fullstack.git
 ```
 
 2. Install the dependencies
