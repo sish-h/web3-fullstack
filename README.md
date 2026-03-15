@@ -1,35 +1,22 @@
-## A full stack web3 on-chain blog and CMS
+# web3-fullstack
+A full stack web3 on-chain blog and CMS built with JavaScript. This project allows users to create, manage, and deploy their own blockchain-based blog, with all data stored on-chain.
 
-> This codebase goes along with my tutorial [The Complete Guide To Full Stack Web3 Development](https://dev.to/dabit3/the-complete-guide-to-full-stack-web3-development-4g74)
+## What it does
+This repo provides a basic structure for a web3 blog, including user authentication, post creation and editing, and a simple content management system. It's designed to be modular and customizable, so you can easily add or remove features as needed.
 
-To deploy this app:
+## Getting started
+To run the project locally, follow these steps:
+1. Clone the repo: `git clone https://github.com/your-username/web3-fullstack.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run start`
 
-1. Clone this repository
-
-```sh
-git clone https://github.com/venus0213/web3-fullstack.git
+## Example usage
+Create a new blog post by sending a transaction to the `createPost` function, passing in the post title and content as arguments. For example:
+```javascript
+const postTitle = 'My first blog post';
+const postContent = 'This is the content of my first blog post';
+await contract.createPost(postTitle, postContent);
 ```
+This will create a new post on the blockchain, which can then be retrieved and displayed on the frontend.
 
-2. Install the dependencies
-
-```sh
-npm install
-```
-
-3. Run the local node
-
-```sh
-npx hardhat node
-```
-
-4. Deploy to localhost
-
-```sh
-npx hardhat run scripts/deploy.js --network localhost
-```
-
-5. Start the app
-
-```sh
-npm start
-```
+Note: This is just a starting point, and you'll need to modify the code to suit your specific use case. Be sure to check out the [issues](https://github.com/your-username/web3-fullstack/issues) page for known bugs and areas for improvement.
